@@ -1,3 +1,4 @@
+pub mod automation;
 pub mod comcntr;
 pub mod global_context;
 
