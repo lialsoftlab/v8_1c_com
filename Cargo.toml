@@ -1,0 +1,13 @@
+[package]
+name = "v8_1c_com"
+version = "0.1.0"
+authors = ["Alexey V. Litvinov <lialsoftlab@yandex.ru>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["impl-default", "combaseapi", "oaidl", "oleauto", "objbase", "winerror", "winuser"] }
+rusty_winapi = { path = "../rusty_winapi" }
